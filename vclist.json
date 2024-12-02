@@ -1,0 +1,9 @@
+[
+    {
+          "template": "AuthorizationDentreeSchemaV1",
+          "name": "Authorization d'entrée territoire togolais",
+          "description": "Document attestation de demande d'authorisation d'entrée sur le territoire togolais",
+          "source": "jxt"
+    }
+]
+  
