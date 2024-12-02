@@ -1,0 +1,102 @@
+{
+    "sample:1": {
+        "columns": [
+            {
+                "path": "issuanceDate",
+                "encoder": "isodatetime-epoch-base32"
+            },
+            {
+                "path": "issuer",
+                "encoder": "string",
+                "prefix": [
+                    "did:web:digital.gouv.tg"
+                ]
+            },
+            {
+                "path": "id",
+                "encoder": "string"
+            },
+            {
+                "path": "proof.verificationMethod",
+                "encoder": "string",
+                "prefix": [
+                    "did:web:172.17.0.1"
+                ]
+            },
+            {
+                "path": "proof.proofValue",
+                "encoder": "multibase-base36"
+            },
+            {
+                "path": "proof.created",
+                "encoder": "isodatetime-epoch-base32"
+            },
+            {
+                "path": "credentialSubject.objet",
+                "encoder": "string"
+            },
+              {
+                "path": "credentialSubject.type",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.prenomDemandeur",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.nationaliteDemandeur",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.numeroPassportDemandeur",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.dateDelivrancePassport",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.nomPrenomsSignataire",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.numeroDemande",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.cat",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.exp",
+                "encoder": "string"
+            },
+            {
+                "path": "credentialSubject.rat",
+                "encoder": "string"
+            }
+        ],
+        "template": {
+            "@context": [
+                "https://www.w3.org/2018/credentials/v1",
+                "https://w3id.org/security/suites/ed25519-2020/v1",
+                "https://raw.githubusercontent.com/tgvcs/5/main/vcContexts/AuthorizationDentreeSchemaV1.jsonld"
+            ],
+            "type": [
+                "VerifiableCredential"
+            ],
+            "credentialSubject": {
+                "@context": [
+                    "https://www.w3.org/2018/credentials/v1",
+                    "https://w3id.org/security/suites/ed25519-2020/v1",
+                    "https://raw.githubusercontent.com/tgvcs/5/main/vcContexts/AuthorizationDentreeSchemaV1.jsonld"
+                ],
+                "type": "AuthorizationDentreeSchemaV1"
+            },
+            "proof": {
+                "type": "Ed25519Signature2020",
+                "proofPurpose": "assertionMethod"
+            }
+        }
+    }
+}
