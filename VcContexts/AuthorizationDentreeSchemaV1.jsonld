@@ -1,0 +1,25 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "AuthorizationDentreeSchemaV1": {
+            "@id": "schema:AuthorizationDentreeSchemaV1",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "prenomDemandeur": "schema:name",
+                "nationaliteDemandeur": "schema:name",
+                "numeroPassportDemandeur": "schema:name",
+                "dateDelivrancePassport": "schema:name",
+                "nomPrenomsSignataire": "schema:name",
+                "numeroDemande": "schema:name",
+                "cat": "schema:name",
+                "exp": "schema:name",
+                "rat": "schema:name"
+            }
+        }
+    }
+}
